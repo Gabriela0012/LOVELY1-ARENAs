@@ -1,0 +1,98 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.background {
+  background-image: url("../img/fondo.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.header_img-logo {
+  width: 60%;
+}
+
+.header_img-log-car {
+  display: flex;
+  justify-content: flex-end;
+  width: 40%;
+  margin-top: 40px;  
+}
+
+.logo {
+  width: 200px;
+  height: 110px;
+  border-radius: 35%;
+}
+
+.logearse {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.carrito {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-tabs{
+  background-color: rgb(230, 208, 240);
+}
+
+.nav-font{
+  font-size: 20px;
+  color: rgb(155, 18, 182);
+  font-family: 'Ranga', cursive;
+  border-bottom: 10px;
+  font-variant: small-caps;
+  text-decoration: none;
+}
+
+.nav-font:hover, .nav-font:active{
+  font-size: 150%;
+  color: rgb(155, 18, 182);
+}
+
+.contenido {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+
+}
+
+.img-fluid {
+  border-radius: 20%;
+}
+
+.sidebar-frase {
+  font-family: 'Ranga', cursive;
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+  background-color: rgb(204, 143, 228);
+}
+
+.footer{
+  background-color: rgb(230, 208, 240);
+  height: 150px;
+}
+.footer-img {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 20px;
+}
+
+.footer_redes {
+  width: 50px;
+  height: 50px;
+}
+
+.footer > h3{
+  font-size: 22px;
+  color: rgb(155, 18, 182);
+  font-family: 'Ranga', cursive; 
+}
