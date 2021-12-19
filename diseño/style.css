@@ -9,6 +9,7 @@ body {
   background-size: cover;
 }
 
+/* header */
 .header_img-logo {
   width: 60%;
 }
@@ -48,32 +49,85 @@ body {
   padding-left: 50px;
 }
 
-
 .navbar-light .navbar-nav .nav-link:hover {
   font-size: 200%;
   color: rgb(155, 18, 182);
 } 
 
+/* main */
 .contenido {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 10px;
-
 }
 
 .img-fluid {
-  border-radius: 20%;
+  border-radius: 10px;
+  position: relative;
+
+}
+ 
+.contenido_oferta {
+  position: absolute;
+  color: white;
+  font-size: 50px;
+  font-weight: 1000;
+  font-family: new roman;
+  animation: titilo 1.4s linear infinite;
 }
 
+.contenido_oferta:hover{
+  color: rgb(44, 221, 20);
+}
+
+@keyframes titilo{
+  0%{ transform: scale(1);}
+  25%{ transform: scale(1);}
+  30%{ transform: scale(1.4);}
+  50%{ transform: scale(1.2);}
+  70%{ transform: scale(1.4);}
+  100%{ transform: scale(1);}
+} 
+
+/* sidebar */
 .sidebar-frase {
   font-family: 'Ranga', cursive;
   font-size: 20px;
   color: white;
   padding: 10px;
   background-color: rgb(204, 143, 228);
+  animation-name: colores;
+  animation-duration: 20s;
+  animation-delay: 1s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
 }
 
+@keyframes colores {
+  0%{background-color:rgb(204, 143, 228);}
+  10%{background-color: rgba(255, 0, 0, 0.685);}
+  20%{background-color:rgba(255, 166, 0, 0.61);}
+  30%{background-color:rgba(255, 255, 0, 0.651);}
+  40%{background-color: rgba(0, 128, 0, 0.726);}
+  50%{background-color: rgba(0, 0, 255, 0.699);}
+  60%{background-color: rgba(76, 0, 130, 0.651);}
+  70%{background-color: rgba(128, 0, 128, 0.815);}
+  100%{background-color: rgb(204, 143, 228);}
+}
+
+/* PRODUCTOS */
+.card-text{
+  font-weight: 700;
+}
+
+.card:hover {
+  transform: scale(1.2, 1.2);
+
+}
+
+
+/* footer */
 .footer{
   display: flex;
   flex-direction: row;
@@ -87,12 +141,10 @@ body {
   
 } 
 
-
 .footer-img {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-
 }
 
 .footer_redes {
@@ -114,6 +166,7 @@ body {
   color: rgb(155, 18, 182);
   font-family: 'Ranga', cursive; 
 }
+
 .tarjeta {
   display: flex;
   flex-direction: column;
@@ -123,6 +176,8 @@ body {
   background-color: rgb(230, 208, 240);
 
 }
+
+/* todos los h2 */
 h2{
   text-align: center;
   font-size: 30px;
@@ -131,6 +186,7 @@ h2{
   background-color: rgb(230, 208, 240);
 }
 
+/* formulario de contactanos */
 .abs-center {
   display: flex;
   align-items: center;
@@ -141,44 +197,39 @@ h2{
   font-family: 'Ranga', cursive;
 }
 
-
 .form {
   background-color: rgb(230, 208, 240);
   border-radius: 10px;
 }
 
-.container_productos {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-}
-.container_productos-1 {
-  width: 200px;
-  height: 200px;
-  margin: 20px;
-  background-color: rgb(219, 73, 212);
-  border-radius: 25%;
-  opacity: 35%;
-}
-
-.pepito{
-  background-color: rgb(241, 236, 243);
+/* informacion  para comprar */
+.contenido_texto{
+  background-color: white;
   border-radius: 10px;
   padding: 10px;
   border: 1px solid rgb(219, 73, 212);
   margin: 5px;
+  font-family: 'Ranga', cursive;
+  font-size: 20px;
 
 }
 
+h3{
+  color: rgb(163, 56, 163);
+  font-weight: 500;
+
+}
+
+/* media querys */
 @media all and (max-width: 600px) {
-  .footer{
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-    gap: 5px;
+  .contenido_oferta {
+    color: white;
+    font-size: 25px;
+    font-weight: 1000;
+    font-family: new roman;
+    animation: titilo 1.4s linear infinite;
   }
+
   .logo {
     width: 100px;
     height: 60px;
@@ -195,22 +246,5 @@ h2{
     height: 30px;
   }
 
-  footer > .tarjeta {
-    font-size: 12px;
-  }
-
-  .footer-img {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    gap: 10px;
-  }
-  
-  .footer_redes {
-    width: 23px;
-    height: 23px;
-  }
-
-  
 }
 

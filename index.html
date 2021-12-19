@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>LOVELY</title>
-    <link rel="stylesheet" href="./diseño/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 	  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	  <link href="https://fonts.googleapis.com/css2?family=Ranga&display=swap" rel="stylesheet">
@@ -31,7 +30,7 @@
         </div>      
         <div class="menu p-2">
           <nav class="navbar navbar-expand-lg navbar-light">
-            <button class="navbar-toggler" type="button" data-target="#navbarNav" data-toggle="collapse" aria-expanded="false" aria-label="toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-target="#navbarNav" data-bs-toggle="collapse" aria-expanded="false" aria-label="toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button> 
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -58,12 +57,14 @@
       <main>
         <aside class="text-center">
           <div class="sidebar-frase m-3">
-            <h3>SI NO ES UN BUEN DÍA ME LO INVENTO LOVELY
-            </h3>
+            <h1>SI NO ES UN BUEN DÍA ME LO INVENTO LOVELY</h1>
           </div>
         </aside>
         <div class="contenido p-3">
-          <img class="img-fluid" src="img/chicas.jpg" alt="img principal">
+          <img class="img-fluid d-flex" src="img/chicas.jpg" alt="img principal">
+       
+          <div class="contenido_oferta text-wrap">20% OFF</div>
+          
         </div>
       </main>
       <footer>
@@ -71,21 +72,21 @@
           <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-12 col-sm-12 text-center">
             <h5>SIGAMOS CONECTADOS</h5>
             <br>
-            <ul class="footer-img text-center">
+            <ul class="footer-img d-flex justify-content-around">
               <li><a href="#"><img class="footer_redes" src="../img/instagram.png" alt="instagram"></a></li>
               <li><a href="#"><img class="footer_redes" src="../img/facebook.png" alt="facebook"></a></li>
-              <li><a href="#"> <img class="footer_redes" src="../img/twitter.png" alt="twitter"></a></li>
-              <li><a href="#"> <img class="footer_redes" src="../img/whatsapp.png" alt="whatsapp"></a></li>
+              <li><a href="#"><img class="footer_redes" src="../img/twitter.png" alt="twitter"></a></li>
+              <li><a href="#"><img class="footer_redes" src="../img/whatsapp.png" alt="whatsapp"></a></li>
             </ul>
           </div>
-          <div class="col-xxl-6 col-xl-6 col-lg-4 col-md-6 col-sm-12">
+          <div class="col-xxl-6 col-xl-6 col-lg-4 col-md-6 col-sm-12 text-center">
             <div class="tarjeta">
               <h5>NOSOTROS</h5>
               <br>
               <p>Somos Lovely, una gran familia. Hace 1 año que nos dedicamos a la venta online. Valoramos tener talles para todos los cuerpos.</p>
             </div>
           </div>
-          <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12">
+          <div class="col-xxl-3 col-xl-3 col-lg-4 col-md-6 col-sm-12 text-center">
             <h5>CATEGORÍAS</h5>
             <div>
               <ul class="navbar-nav p-2">
